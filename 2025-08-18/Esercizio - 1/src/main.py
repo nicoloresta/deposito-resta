@@ -1,4 +1,5 @@
 import spacy
+from collections import Counter
 import os
 
 # Load spaCy model (you may need to download it first with: python -m spacy download <model_name>)
@@ -19,6 +20,20 @@ def count_words(content: str) -> int:
     # Count tokens that are not whitespace, punctuation, or symbols
     return len([token for token in doc if not token.is_space and not token.is_punct])
 
+def get_top_words(content: str, n: int = 5) -> list:
+    """Get the top n most frequent words in the content using spaCy."""
+    doc = nlp(content.lower())
+    # Filter tokens: exclude whitespace, punctuation, stop words, and non-alphabetic tokens
+    words = [
+        token.text
+        for token in doc
+        if not token.is_space 
+            and not token.is_punct
+            and token.is_alpha
+    ]
+    word_freq = Counter(words)
+    return word_freq.most_common(n)
+
 if __name__ == "__main__":
     FILE_PATH = os.path.join(".", "2025-08-18", "Esercizio - 1", "rsc", "input.txt")
     try:
@@ -34,6 +49,11 @@ if __name__ == "__main__":
             total_words = count_words(content)
             print(f"Total words: {total_words}")
 
+            # Get top 5 most frequent words
+            top_5_words = get_top_words(content)
+            print("Top 5 most frequent words:")
+            for word, count in top_5_words:
+                print(f"  {word}: {count}")
     except FileNotFoundError:
         print("Input file not found. Please ensure 'input.txt' exists in the 'rsc' directory.")
         exit(1)
