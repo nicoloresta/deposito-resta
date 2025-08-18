@@ -1,0 +1,7 @@
+Questo è un testo di esempio per testare il nostro programma Python.
+Il programma deve contare le righe, le parole e trovare le parole più frequenti.
+Python è un linguaggio di programmazione molto potente e versatile.
+La libreria NLTK fornisce molti strumenti per l'elaborazione del linguaggio naturale.
+Questo testo contiene diverse parole ripetute per testare la funzionalità.
+Le parole "questo", "è", "un" e "per" appaiono più volte nel testo.
+Il nostro programma dovrà gestire la punteggiatura e le maiuscole correttamente.
