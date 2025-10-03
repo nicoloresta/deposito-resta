@@ -1,0 +1,20 @@
+2025-10-01 11:12:54,301 - INFO - Loading plugin 'docling_defaults'
+2025-10-01 11:12:54,308 - INFO - Registered ocr engines: ['easyocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2025-10-01 11:12:54,399 - INFO - paths: [WindowsPath('C:/Users/XT144AC/AppData/Local/Temp/tmprvroseqb/EN_intesa_san_paolo__2024_Annual_report.pdf')]
+2025-10-01 11:12:54,431 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2025-10-01 11:12:54,399 - INFO - paths: [WindowsPath('C:/Users/XT144AC/AppData/Local/Temp/tmprvroseqb/EN_intesa_san_paolo__2024_Annual_report.pdf')]
+2025-10-01 11:12:54,431 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+port.pdf')]
+2025-10-01 11:12:54,431 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2025-10-01 11:12:54,431 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2025-10-01 11:12:54,565 - INFO - Going to convert document batch...
+2025-10-01 11:12:54,565 - INFO - Initializing pipeline for StandardPdfPipeline with options hash f1301fa0db91f613a1f4baa1a2a11518        
+2025-10-01 11:12:54,655 - INFO - Loading plugin 'docling_defaults'
+2025-10-01 11:12:54,657 - INFO - Registered picture descriptions: ['vlm', 'api']
+2025-10-01 11:12:54,846 - INFO - Accelerator device: 'cpu'
+sec.
+2025-10-01 14:42:51,863 - INFO - writing Markdown output to EN_intesa_san_paolo__2024_Annual_report.md
+2025-10-01 14:43:04,998 - INFO - Processed 1 docs, of which 0 failed
+2025-10-01 14:43:07,275 - INFO - All documents were converted in 12612.87 seconds.
+
+3 ore e 50 minuti
